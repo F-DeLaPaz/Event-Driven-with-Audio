@@ -17,7 +17,7 @@
   </div>
   <div class="button-container"> <!--Using this container for the direction buttons for movement-->
     <div class="slide-right-button-container"> <!--I'm using this container so i can control spacing betwwen buttons-->
-      <button id="slideRightButton" onclick="playAudio('slideRight.mp3'); slideToRight()">Start slide to the &rarr;</button> <!--Calling an audio snip witht he onclick-->
+      <button id="slideRightButton" onclick="slideToRight()">Start slide to the &rarr;</button> <!--Calling an audio snip witht he onclick-->
     </div>
     <div class="stop-button-container" id="stopButtonContainer"> <!--for spacing-->
       <button class="stop-button" onclick="stopSlide();">
@@ -25,7 +25,7 @@
       </button>
     </div>
     <div class="slide-left-button-container"> <!-- Same as above-->
-      <button id="slideLeftButton" onclick="playAudio('slideLeft.mp3'); slideToLeft()">Start slide to the &larr;</button>
+      <button id="slideLeftButton" onclick="slideToLeft()">Start slide to the &larr;</button>
     </div>
   </div>
   <div class="chacha-container"> <!--These buttons will play whole song via trigger a function-->

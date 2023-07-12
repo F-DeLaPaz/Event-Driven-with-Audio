@@ -27,6 +27,9 @@ function slideToLeft() {
   stopEnabled = true;
   slideLeftEnabled = false;
   updateButtonStatuses();
+
+  audioElement.src = "slideLeft.mp3"
+  audioElement.play();
 }
 
 function slideToRight() {  // See above         
@@ -51,6 +54,9 @@ function slideToRight() {  // See above
   stopEnabled = true;
   slideLeftEnabled = false;
   updateButtonStatuses();
+
+  audioElement.src = "slideRight.mp3"
+  audioElement.play();
 }
 
 function stopSlide() {
@@ -117,6 +123,7 @@ window.onload = function() {
 
 // Function to be executed when "Yes to the Cha Cha" button is clicked
 function yesChaCha() {
+  audioElement.src = "chacha.mp3";
   audioElement.play();
   document.getElementById("playButton").classList.remove("playActive");
   document.getElementById("playButton").classList.add("playInactive");
